@@ -1,0 +1,9 @@
+.babelrc
+.eslintrc
+.github
+.git
+*.DS_Store
+*npm-debug.log
+*yarn-error.log
+lib
+coverage
