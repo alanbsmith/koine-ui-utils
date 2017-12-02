@@ -1,6 +1,6 @@
 {
   "name": "koine-ui-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "a library of common utils for RetroSockets",
   "main": "build/index.js",
   "directories": {
@@ -11,7 +11,7 @@
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "review": "run-s lint test:clean test test:coverage:report",
     "test": "jest lib/**; exit 0",
     "test:clean": "rimraf ./coverage",

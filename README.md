@@ -28,30 +28,15 @@ or to install with npm, run:
 $ npm install
 ```
 ## Overview
-There are three main exports
+There are two main exports
 from this lib:
 * `buildGlobalStyles()` - a function for building a global style string for styled-components `injectGlobal` function
-* `constants` - an object containing helpful constants for style properties
 * `theme` - an object containing all the attributes for our UI theme
 
 ### buildGlobalStyles()
 Below is an example use of this function:
 
 ```javascript
-```
-
-### constants
-The constants object looks like this:
-
-```javascript
-{
-  fontWeights: {
-    light: 300,
-    normal: 400,
-    semiBold: 600,
-    bold: 700,
-  },
-}
 ```
 
 
@@ -118,6 +103,12 @@ The theme object look like this:
     primary: STRING,
     primaryFallback: STRING,
   },
+  fontWeights: {
+    light: NUMBER,
+    normal: NUMBER,
+    semiBold: NUMBER,
+    bold: NUMBER,
+  },
 }
 ```
 
@@ -130,20 +121,41 @@ Helpful information on development workflow in this library lives
 ### Linting
 
 To run the linter once:
-```
+```sh
 $ yarn lint
 ```
 
 To run the watch task:
-```
+```sh
 $ yarn lint:watch
+```
+
+### Testing
+To run the tests once:
+```sh
+$ yarn test
+```
+
+To run the watch script (for only relevant test files)
+```sh
+$ yarn test:watch
+```
+
+To run the watch script (for all test files)
+```sh
+$ yarn test:watchAll
+```
+
+To view the coverage report:
+```sh
+$ yarn test:coverage:report
 ```
 
 ### Review
 If you'd like to run the linters and tests at once (this is a nice check before pushing to
 Github or deploys), you can run:
 
-```
+```sh
 $ npm run review
 ```
 
@@ -153,12 +165,12 @@ will interact with when they use your library. Nothing in `lib` gets shipped wit
 published module._
 
 Run once:
-```
+```sh
 $ npm run build
 ```
 
 Run the watch script:
-```
+```sh
 $ npm run build:watch
 ```
 
