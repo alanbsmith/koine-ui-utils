@@ -1,6 +1,6 @@
 {
   "name": "koine-ui-utils",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "a library of common utils for RetroSockets",
   "main": "build/index.js",
   "directories": {
