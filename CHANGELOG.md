@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.3.0
+* Adds `borderRadius` to theme dimensions
+
 ## 0.2.1
 * Adds CircleCI config
 
