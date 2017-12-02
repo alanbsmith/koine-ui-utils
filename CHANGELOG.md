@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.1
+* Adds CircleCI config
+
 ## 0.2.0
 * Moves `fontWeights` to theme
 * Removes constants
