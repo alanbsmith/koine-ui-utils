@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0
+* Moves `fontWeights` to theme
+* Removes constants
+* Updates and refactors tests
+* Updates `prepublish` script to `prepublishOnly`
+
 ## 0.1.0
 * Initial release 🎉
 * Adds basic lib setup
