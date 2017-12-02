@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.0
+* Adds `padScale` util function
+
 ## 0.3.0
 * Adds `borderRadius` to theme dimensions
 

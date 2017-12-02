@@ -28,17 +28,37 @@ or to install with npm, run:
 $ npm install
 ```
 ## Overview
-There are two main exports
+There are three main exports
 from this lib:
 * `buildGlobalStyles()` - a function for building a global style string for styled-components `injectGlobal` function
+* `padScale()` - a function for scaling dimensions based on the theme's `basePad` dimensions
 * `theme` - an object containing all the attributes for our UI theme
 
 ### buildGlobalStyles()
 Below is an example use of this function:
 
 ```javascript
+import { injectGlobal } from 'styled-components';
+import { buildGlobalStyles, theme }  from 'koine-ui-utils';
+
+injectGlobal([buildGlobalStyles(theme)]);
 ```
 
+### padScale()
+Below is an example use of this function:
+
+```javascript
+import { padScale } from 'koine-ui-utils';
+import { rem } from 'polished';
+
+// `padScale` returns a raw number
+// given `theme.dimensions.basePad` is `8`, a scale of 3 would return `24`
+// wrapping this in `rem()` keeps the units consistent
+// this example would return `padding: 2rem 3rem;`
+const WideButton = styled.button`
+  padding: ${rem(padScale(2))} ${rem(padScale(3))};
+`;
+```
 
 ### theme
 The theme object look like this:
